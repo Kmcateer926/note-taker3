@@ -1,20 +1,18 @@
-// FILE FOR READ, WRITE, DELETE METHODS
-const fs = require("fs");
 
-const dbPath = "db/db.json";
+// const fs = require("fs");
 
-// function to read saved notes from db.json
-const readData = () => {
-  const data = fs.readFileSync(dbPath, "utf8");
+// const dbPath = "db/db.json";
 
-  const notes = JSON.parse(data);
 
-  return notes;
-};
+// const readData = () => {
+//   const data = fs.readFileSync(dbPath, "utf8");
 
-// function to write saved notes to db.json
-const writeData = (info) => {
-  fs.writeFileSync(dbPath, JSON.stringify(info));
-};
+//   const notes = JSON.parse(data);
 
-module.exports = { readData, writeData };
+//   return notes;
+// };
+// const writeData = (info) => {
+//   fs.writeFileSync(dbPath, JSON.stringify(info));
+// };
+
+// module.exports = { readData, writeData };
